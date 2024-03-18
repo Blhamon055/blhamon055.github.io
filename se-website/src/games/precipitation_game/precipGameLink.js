@@ -8,4 +8,4 @@ const precipGameLink = () => {
   );
 };
 
-export default GodotGameLink;
+export default precipGameLink;
