@@ -1,14 +1,14 @@
 import React from 'react';
 
-const PrecipGameLink = () => {
+const precipGameLink = () => {
   return (
-    <a href={process.env.PUBLIC_URL + '/games/precipitation_game/Precipitation Minigame.html'} 
+    <a href={process.env.PUBLIC_URL + '/games/precipitation_game/index.html'} 
     target="_blank" 
     rel="noopener noreferrer"
     >
-      Play My Godot Game
+      Play Our Precipitation Game!
     </a>
   );
 };
 
-export default PrecipGameLink;
+export default precipGameLink;
