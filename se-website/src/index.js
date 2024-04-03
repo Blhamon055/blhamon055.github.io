@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import adminbutton from './AdminLoginComponent/adminbutton'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import AdminLoginPage from './AdminLoginComponent/adminloginpagetest';
+import Userlogin from './UserLoginComponent/userlogin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +14,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App/>}></Route>
         <Route path='/adminlogin' element={<AdminLoginPage/>}></Route>
+        <Route path='/userlogin' element={<Userlogin/>}></Route>
       </Routes>
     </Router>
   </React.StrictMode>
