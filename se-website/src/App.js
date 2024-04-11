@@ -1,5 +1,6 @@
 import "./App.css";
 import ButtonLink from './AdminLoginComponent/adminbutton';
+import Icons from './IconsComponent/icons';
 
 function App() {
   return (
