@@ -1,12 +1,11 @@
 // LoginPage.js
 
 import React from 'react';
-import AdminLoginForm from './adminloginformtest';
+import AdminLoginForm from './adminloginform';
 
 const AdminLoginPage = () => {
   return (
     <div>
-      <h1>Admin Login</h1>
       <AdminLoginForm />
     </div>
   );

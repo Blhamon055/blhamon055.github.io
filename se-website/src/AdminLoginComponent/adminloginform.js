@@ -12,17 +12,14 @@ const AdminLoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <div className="loginwrapper">
+    <form onSubmit={handleSubmit} className="adminform">
+        <h3 className="inputwrapper">Admin Login</h3>
+        <div className="inputwrapper">
         <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+        <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)}/>
       </div>
-      <div>
+      <div className="inputwrapper">
         <label htmlFor="password">Password:</label>
         <input
           type="password"
@@ -31,8 +28,11 @@ const AdminLoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type="submit">Login</button>
+      <div className='inputwrapper'>
+      <button className="submitbutton" type="submit">Login</button>
+      </div>
     </form>
+    </div>
   );
 };
 
