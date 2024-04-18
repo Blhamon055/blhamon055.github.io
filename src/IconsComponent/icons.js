@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import acidBaseImage from "./acidbase.png"
 import preciptationImage from "./preciptation.png"
+import eapImage from "./eap.png"
 
 const Icons = ({text, effectType}) => {
 
@@ -18,24 +19,30 @@ const Icons = ({text, effectType}) => {
 
     return (
         <div>
-            <div id="1">
-            {hover && <p>Acid Base Game</p>}
-            <img 
+            <div>
+            {hover && <p>Acid Base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preciptation Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EAP Game</p>}
+           <img
                 onMouseEnter={(x) => onHover(x)}
                 onMouseLeave={(x) => onHoverOver(x)}
                 src = {acidBaseImage}
-                style={{width: 300}, {height: 300}}
+                style={{width: 300, height: 300, marginRight: 15}}
             />
-            </div>
-        <div id="2">
-            {hover && <p>Preciptation Game</p>}
+            
             <img
                 onMouseEnter={(x) => onHover(x)}
                 onMouseLeave={(x) => onHoverOver(x)}
                 src = {preciptationImage}
-                style={{width: 300}, {height: 300}}
+                style={{width: 300, height: 300, marginRight: 15}}
             />
-        </div>
+
+            <img
+                onMouseEnter={(x) => onHover(x)}
+                onMouseLeave={(x) => onHoverOver(x)}
+                src = {eapImage}
+                style={{width: 300, height: 300}}
+            />
+
+            </div>
         </div>
     )
 };
