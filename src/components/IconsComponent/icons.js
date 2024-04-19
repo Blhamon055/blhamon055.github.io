@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import acidBaseImage from "./acidbase.png"
 import preciptationImage from "./preciptation.png"
 import eapImage from "./eap.png"
