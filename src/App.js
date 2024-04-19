@@ -1,7 +1,6 @@
 import "./App.css";
-import AdminButtonLink from './AdminLoginComponent/adminbuttonlink';
-import UserButtonLink from "./UserLoginComponent/userbuttonlink";
-import Icons from './IconsComponent/icons';
+import AdminButtonLink from './components/AdminLoginComponent/adminbuttonlink';
+import UserButtonLink from "./components/UserLoginComponent/userbuttonlink";
 
 function App() {
   return (
